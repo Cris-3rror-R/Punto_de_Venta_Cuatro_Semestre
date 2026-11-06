@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NetBeans
 Proyecto_Final_Taller_de_Base_de_Datos/build/
 Proyecto_Final_Taller_de_Base_de_Datos/dist/
@@ -13,3 +14,20 @@ Proyecto_Final_Taller_de_Base_de_Datos/nbproject/private/
 *.local.properties
 .vscode/*
 !.vscode/settings.json
+=======
+# NetBeans
+Proyecto_Final_Taller_de_Base_de_Datos/build/
+Proyecto_Final_Taller_de_Base_de_Datos/dist/
+Proyecto_Final_Taller_de_Base_de_Datos/nbproject/private/
+
+# Compiled Java files
+*.class
+
+# Local database credentials and editor state
+.env
+.env.*
+!.env.example
+*.local.properties
+.vscode/*
+!.vscode/settings.json
+>>>>>>> origin/main
