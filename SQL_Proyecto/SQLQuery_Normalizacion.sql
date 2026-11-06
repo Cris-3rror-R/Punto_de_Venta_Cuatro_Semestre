@@ -1,0 +1,25 @@
+ALTER TABLE Credito
+ADD Ape_Cr VARCHAR(35) NOT NULL,
+	Cll_Cr VARCHAR(35) NOT NULL,
+	Col_Cr VARCHAR(35) NOT NULL,
+	NCl_Cr int NOT NULL,
+	Pob_Cr VARCHAR(35) NOT NULL
+;
+
+CREATE TABLE Tipos_Productos (
+	Clav_TiP INT IDENTITY (1,1),
+	Nom_TiP VARCHAR (35) NOT NULL,
+	Des_TiP VARCHAR (50) NOT NULL,
+	PRIMARY KEY (Clav_TiP)
+);
+
+ALTER TABLE Productos
+DROP COLUMN Tip_Prd;
+
+ALTER TABLE Productos
+ADD Clav_TiP INT NOT NULL,
+FOREIGN KEY(Clav_TiP) REFERENCES Tipos_Productos(Clav_Tip);
+
+ALTER TABLE Proveedores
+ADD Clav_TiP INT NOT NULL,
+FOREIGN KEY(Clav_TiP) REFERENCES Tipos_Productos(Clav_Tip);

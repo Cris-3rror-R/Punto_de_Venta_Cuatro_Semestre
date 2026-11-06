@@ -1,0 +1,8 @@
+{
+    "java.project.referencedLibraries": {
+        "include": [
+            "Proyecto_Final_Taller_de_Base_de_Datos/lib/**/*.jar"
+        ],
+        "exclude": []
+    }
+}
